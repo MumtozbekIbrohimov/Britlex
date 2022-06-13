@@ -1,0 +1,124 @@
+.contact-content {
+    width: 776px;
+    @include responsive(phone) {
+        text-align: center;
+        width: 100%;
+    }
+    &-title {
+        font-weight: 600;
+        font-size: 4.8rem;
+        line-height: 8rem;
+        margin-bottom: 3.7rem;
+        color: $title-color;
+        @include responsive(big-tables) {
+            font-size: 3.6rem;
+        }
+        @include  responsive(tables) {
+            font-size: 3rem;
+        }
+        // @include responsive(phone) {
+
+        // }
+        @include responsive(mini-phone) {
+            font-size: 2.4rem;
+        }
+    }
+    &-text {
+        margin-bottom: 5.2rem;
+        @include responsive(desktop) {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+        }
+        @include responsive(big-tables) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+        @include responsive(tables) {
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+        }
+        @include responsive(phone) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            text-align: center;
+        }
+        @include responsive(mini-phone) {
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+        }
+    }
+    &-form {
+        display: flex;
+        align-items: center;
+        @include responsive(mini-phone) {
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+    &-sections-input {
+        width: 100%;
+        padding: 2.6rem 3.3rem 3rem;
+        border: 2px solid $text-color;
+        border-radius: 10px;
+        margin-right: 10px;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        @include responsive(desktop) {
+            padding:  2.3rem 3.8rem 1.6rem;
+        }
+        @include responsive(big-tables) {
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+        }
+        @include responsive(tables) {
+            padding: 1.6rem 2.4rem;
+            font-size: 1.2 rem;
+            line-height: 1.8rem;
+        }
+        @include responsive(phone) {
+            padding: 2rem 2.5rem;
+            // margin-right: -1.5rem;
+        }
+        @include responsive(mini-phone) {
+            width: 100%;
+            padding: 1.6rem 0 1.6rem 2.6rem;
+            font-size: 1.2rem;
+            margin-bottom: 1.7rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &-btn {
+        padding: 2.5rem 8.2rem;
+        background-color: $brand-color;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 3rem;
+        color: $btn-text-color;
+        border-radius: 10px;
+        @include responsive(desktop) {
+            padding: 1.6rem 5.6rem;
+        }
+        @include responsive(big-tables) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+        @include responsive(tables) {
+            font-size: 1.3rem;
+            line-height: 1.9rem;
+            padding: 1.5rem 4rem;
+        }
+        @include responsive(phone) {
+            padding: 2rem 5.6rem 1.4rem;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+        @include responsive(mini-phone) {
+            width: 100%;
+            padding: 1.9rem 0;
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+        }
+    }
+}

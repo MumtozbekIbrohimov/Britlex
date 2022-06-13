@@ -1,0 +1,34 @@
+.about {
+    &-container {
+        @include container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(phone) {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+    &-img {
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+        @include responsive(big-tables) {
+            width: 336px;
+            height: 336px;
+        }
+        @include responsive(tables) {
+            width: 275px;
+            height: 275px;
+        }
+        @include responsive(phone) {
+            width: 352px;
+            height: 352px;
+        }
+        @include responsive(mini-phone) {
+            width: 283px;
+            height: 283px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.sitenav {
+    &-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    &-item:not(:last-child) {
+        margin-right: 3rem;
+    }
+    &-link {
+        text-decoration: none;
+        color: $brand-color ;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 3rem;
+        border-bottom: 3px solid $btn-text-color;
+        @include responsive(big-tables) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+        @include responsive(tables) {
+            display: none;
+        }
+    }
+}

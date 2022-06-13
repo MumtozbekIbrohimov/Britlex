@@ -1,0 +1,38 @@
+.contact {
+    margin-bottom: 15rem;
+    &-container {
+        @include container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(phone) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &-img {
+        width: 477px;
+        height: 429px;
+        @include responsive(desktop) {
+            width: 447px;
+            height: 399px;
+        }
+        @include responsive(big-tables) {
+            width: 312px;
+            height: 281px;
+        }
+        @include responsive(tables) {
+            width: 233px;
+            height: 210px;
+        }
+        @include responsive(phone) {
+            width: 358px;
+            height: 322px;
+        }
+        @include responsive(mini-phone) {
+            width: 253px;
+            height: 228px;
+        }
+    }
+}

@@ -1,0 +1,217 @@
+.pricing-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    @include responsive(tables) {
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+        justify-content: center;
+    }
+    @include responsive(phone) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+    &-item {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        :not(:last-child) {
+            margin-right: 0.5rem;
+        }
+        @include responsive(desktop) {
+            width: 350px;
+        }
+        @include responsive(tables) {
+            width: 200px;
+        }
+        @include responsive(phone) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &-item__title {
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 4.8rem;
+        margin-top: auto;
+        margin-bottom: 1.9rem;
+        color: $brand-color;
+        @include responsive(desktop) {
+            font-size: 2.4rem;
+            line-height: 4.4rem;
+        }
+        @include responsive(big-tables) {
+            font-size: 2.2rem;
+            line-height: 3.4rem;
+        }
+        @include responsive(tables) {
+            font-size: 2rem;
+            line-height: 2.8rem;
+        }
+        @include responsive(phone) {
+            font-size: 2.4rem;
+        }
+        @include responsive(mini-phone) {
+            font-size: 1.8rem;
+        }
+    }
+    &__text {
+        @include responsive (desktop) {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+        @include responsive (tables) {
+            font-size: 1.4rem;
+            line-height: 2.1rem;
+        }
+    }
+    &-item__content {
+        display: flex;
+        align-items: center;
+        width: 250px;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        padding: 0 24px 0 18px;
+        background-color: #eee;
+        border-radius: 5px;
+        @include responsive(desktop) {
+            width: 230px;
+            padding: 0.2rem 2rem;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+        @include responsive(big-tables) {
+            width: 205px;
+        }
+        @include responsive(tables) {
+            width: 190px;
+            font-size: 1.3rem;
+            line-height: 2.2rem;
+        }   
+        @include responsive(phone) {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 7rem;
+        }
+        @include responsive(mini-phone) {
+            width: 170px;
+        }
+        h4 {
+            font-weight: 400;
+            font-size: 3rem;
+            line-height: 4.5rem;
+            margin-right: 0.8rem;
+            color: $brand-color;
+            @include responsive(desktop) {
+                font-size: 2.6rem;
+                line-height: 4rem;
+                margin-right: 0.5rem;
+            }
+            @include responsive(big-tables) {
+                font-size: 2.4rem;
+                line-height: 3.6rem;
+            }
+            @include responsive(tables) {
+                font-size: 2.2rem;
+                line-height: 3.3rem;
+            }
+            @include responsive(mini-phone) {
+                font-size: 1.8rem;
+                line-height: 2.7rem;
+            }
+        }
+    }
+}
+
+.sell-img {
+    width: 311px;
+    height: 311px;
+    margin-bottom: 4rem;
+    @include responsive(desktop) {
+        width: 280px;
+        height: 280px;
+    }
+    @include responsive(big-tables) {
+        width: 222px;
+        height: 222px;
+    }
+    @include responsive(tables) {
+        width: 197px;
+        height: 197px;
+    }
+    @include responsive(phone) {
+        width: 291px;
+        height: 291px;    
+    }
+    @include responsive(mini-phone) {
+        width: 248px;
+        height: 248px;
+    }
+}
+.lesson-img {
+    width: 391px;
+    height: 283px;
+    margin-bottom: 4.2rem;
+    @include responsive(desktop) {
+        width: 360px;
+        height: 252px;
+    }
+    @include responsive(big-tables) {
+        width: 267px;
+        height: 195px;
+    }
+    @include responsive(tables) {
+        width: 219px;
+        height: 168px;
+    }
+    @include responsive(phone) {
+        width: 314px;
+        height: 241px;
+    }
+    @include responsive(mini-phone) {
+        width: 257px;
+        height: 197px;
+    }
+}
+.personal-img {
+    width: 340px;
+    height: 340px;
+    margin-bottom: -2rem;
+    @include responsive(desktop) {
+        width: 310px;
+        height: 310px;
+    }
+    @include responsive(big-tables) {
+        width: 242px;
+        height: 242px;
+    }
+    @include responsive(tables) {
+        width: 210px;
+        height: 210px;
+    }
+    @include responsive(phone) {
+        width: 253px;
+        height: 253px;
+    }
+    @include responsive(mini-phone) {
+        width: 241px;
+        height: 241px;
+    }
+}
+.sell-text {
+    margin-bottom: 2.9rem;
+}
+.lesson-text {
+    margin-bottom: 5.9rem;
+}
+.personal-text {
+    margin-bottom: 5.9rem;
+}

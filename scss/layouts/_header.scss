@@ -1,0 +1,61 @@
+
+.header {
+    padding: 5rem 0;
+    &-container {
+        @include container; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-btn {
+        text-decoration: none;
+        color: $title-color;
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        border: 2px $brand-color solid;
+        padding: 1.7rem 5.7rem;
+        border-radius: 5px;
+        transition: all 0.3s;
+        @include responsive(big-tables) {
+            padding: 1.2rem 4rem;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+        }
+        @include responsive(tables) {
+            display: none;
+        }
+    }
+    &-btn:hover {
+        background: $brand-color;
+        color: $btn-text-color;
+    }
+    &-button {
+        padding: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        transition: all 0.5s;
+        display: none;
+        img {
+            width: 30px;
+            height: 17px;
+            @include responsive(phone) {
+                width: 42.35px;
+                height: 24px;
+            }
+            @include responsive(mini-phone) {
+                width: 34px;
+                height: 19px;
+            }
+        }
+        @include responsive(tables) {
+            display: block;
+        }
+    }
+    &-button:hover {
+        opacity: 0.8;
+    }
+    &-button:hover {
+        opacity: 0.6;
+    }
+}

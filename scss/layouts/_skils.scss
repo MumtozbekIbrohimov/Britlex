@@ -1,0 +1,268 @@
+.skils {
+    @include container;
+    padding: 14rem 0 28rem;
+    &_title {
+        font-weight: 600;
+        font-size: 4.8rem;
+        line-height: 8rem;
+        text-align: center;
+        color: $title-color;
+        margin-bottom: 9rem;
+        @include responsive(big-desktop) {
+            font-size: 3.8rem;  
+            line-height: 8rem;
+            margin-bottom: 5rem;
+        }
+        @include responsive(tables) {
+            font-size: 3rem;
+            line-height: 8rem;
+            margin-bottom: 3.7rem;
+        }
+        @include responsive(phone) {
+            font-size: 3.4rem;
+            line-height: 4.5rem;
+            margin-bottom: 2.6rem;
+        }
+        @include responsive(mini-phone) {
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+            margin-bottom: 2rem;
+        }
+    }
+    &-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 2rem;
+        column-gap: 1.8rem;
+
+        @include responsive(big-desktop) {
+            gap: 10px;
+        }
+        @include responsive(tables) {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @include responsive(phone) {
+            display: grid;
+            gap: 34px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        @include responsive(mini-phone) {
+            display: grid; 
+            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+    &-list__item {
+        background-color: $item-bg-color;
+        border-radius: 10px;
+        @include responsive(tables) {
+            width: 224px;
+        }
+        @include responsive(phone) {
+            width: 240px;
+        }
+        
+    }
+    &__item-title {
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 8rem;
+        color: $brand-color;
+        margin-bottom: 5px;
+        @include responsive(big-desktop) {
+            font-size: 2.4rem;
+        }
+        @include responsive(big-tables) {
+            font-size: 2.2rem;
+        }
+        @include responsive(tables) {
+            font-size: 2rem;
+        }
+        @include responsive(phone) {
+            font-size: 1.8rem;
+        }
+    }
+    &-item__text {
+        margin-bottom: 5.2rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        @include responsive(big-desktop) {
+            font-size: 1.3rem;
+            line-height: 1.9rem;
+            margin-bottom: 3rem;
+        }
+    }
+    &-item__btn {
+        background-color: $brand-color;
+        text-decoration: none;
+        font-weight: 500;
+        color: $btn-text-color;
+        padding: 1.5rem 4.5rem;
+        border-radius: 5px;
+        font-size: 1.7rem;
+        line-height: 2.6rem;
+        margin-top: auto;
+
+    }
+}
+.speaking {
+    padding: 3.5rem 4.5rem 9rem 4.3rem;
+    grid-row: 1/3;
+    @include responsive(big-desktop) {
+        padding: 0 1rem 3rem 2rem;
+    }
+    &-item__img {
+        width: 390px;
+        height: 390px;
+        @include responsive(big-desktop) {
+            width: 340px;
+            height: 340px;
+        }
+        @include responsive(big-tables) {
+            width: 230px;
+            height: 230px;
+        }
+        @include responsive(tables) {
+            width: 200px;
+            height: 200px;
+        }
+        @include responsive(phone) {
+            width: 185px;
+            height: 185px;
+            grid-row: 1/2;
+        }
+        @include responsive(mini-phone) {
+            width: 213px;
+            height: 213px;
+        }
+    }
+}
+
+.writing {
+    padding: 0 1.8rem 4.4rem 4rem;
+    @include responsive(big-desktop) {
+        padding: 0 1rem 3rem 2rem;
+    }
+    &-item__img {
+        width: 273px;
+        height: 273px;
+        margin-left: 8rem; 
+        @include responsive(big-desktop) {
+            width: 260px;
+            height: 260px;
+        }
+        @include responsive(big-tables) {
+            width: 190px;
+            height: 190px;
+            margin-left: 2rem;
+        }
+        @include responsive(tables) {
+            width: 180px;
+            height: 180px;
+        }
+        @include responsive(phone) {
+            width: 180px;
+            height: 180px;
+            margin-left: 2rem; 
+        }
+    }
+    &-content {
+        margin-top: -2.5rem;
+        @include responsive(big-desktop) {
+            margin-top: -4rem;
+        }
+    }
+}
+.reading {
+    &-content {
+        margin:  0 1.8rem 4.4rem 4rem;
+        @include responsive(big-desktop) {
+            margin: 0 1rem 3rem 2rem;
+        }
+    }
+    &-item__img {
+        width: 371px;
+        height: 247px;
+        @include responsive(big-desktop) {
+            width: 340px;
+            height: 216px;
+        }
+        @include responsive(big-tables) {
+            width: 233px;
+            height: 152px;
+        }
+        @include responsive(tables) {
+            width: 200px;
+            height: 130px;
+        }
+        @include responsive(phone) {
+            width: 198px;
+            height: 132px;
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        @include responsive(mini-phone) {
+            width: 236px;
+            height: 157px;
+        }
+    }
+}
+
+
+.listening {
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.3rem 2.5rem 4.4rem 4.4rem;
+    @include responsive(big-desktop) {
+        padding: 0 1rem 3rem 2rem;
+    }
+    &-item__img {
+        width: 382px;
+        height: 255px;
+        object-fit: contain;
+        @include responsive(big-desktop) {
+            width: 350px;
+            height: 223px;
+        }
+        @include responsive(big-tables) {
+            width: 244px;
+            height: 159px;
+        }
+        @include responsive(tables) {
+            width: 190px;
+            height: 120px;
+            display: grid;
+            grid-column: auto;
+        }
+        @include responsive(mini-phone) {
+            width: 230px;
+            height: 150px;
+        }
+    }
+    @include responsive(tables) {
+        display: flex;
+        flex-direction: column;
+    }
+    @include responsive(phone) {
+        display: flex;
+        flex-direction: column;
+    }
+}
